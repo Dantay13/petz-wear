@@ -1,0 +1,19 @@
+header {
+    background-color: #00c4cc;
+}
+
+h1 {
+    color: #c84e5a; 
+    font-size: 3cm;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    color: #c84e5a;
+    font-size: 0.5cm;
+}
+
+footer {
+    background-color: #00c4cc;
+}
