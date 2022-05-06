@@ -1,5 +1,12 @@
 header {
     background-color: #00c4cc;
+    height: 5cm;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 h1 {
@@ -8,10 +15,56 @@ h1 {
     text-align: center;
 }
 
-li {
-    display: inline;
+nav {
+    float: right;
+    margin-top: -2cm;
+}
+
+nav ul {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 245px;
     color: #c84e5a;
-    font-size: 0.5cm;
+    font-size: 1cm;
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    display: block;
+    margin-top: 1cm;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    height: 15%;
+}
+
+.column {
+    float: left;
+    width: 18%;
+    padding: 5px;
+    margin-left: 4.3cm;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display:table;
+}
+
+p {
+    font-size: 200%;
+    text-align: center;
+    display: block;
 }
 
 footer {
