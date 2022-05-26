@@ -1,11 +1,12 @@
-// console.log(`Hello World`); 
-
-let userName = prompt(`Please Enter Your Name!`) 
+function enterUserName(){
+    let userName = prompt(`Please Enter Your Name!`) 
 
 console.log(userName);
-//             `Welcome ' + `Danner`
-if (userName == 'Danner') {
+if (userName.toLowerCase() == 'danner') {
     document.write("Welcome Co-Founder " + userName)
 } else {
     document.write("Welcome " + userName) 
 }
+}
+
+enterUserName()

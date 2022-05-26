@@ -1,4 +1,5 @@
-const getDiscountBtn = document.querySelector(".get-discount-btn");
+function discountVoucher(){
+    const getDiscountBtn = document.querySelector(".get-discount-btn");
 const couponContainer = document.querySelector(".coupon-container");
 const closeBtn = document.querySelector(".coupon-container .close");
 
@@ -9,3 +10,6 @@ getDiscountBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     couponContainer.classList.remove("active");
 })
+}
+
+discountVoucher()
