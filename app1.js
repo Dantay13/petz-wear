@@ -1,4 +1,4 @@
-function enterUserName(){
+function enterUserName() {
     let userName = prompt(`Please Enter Your Name!`) 
 
 console.log(userName);

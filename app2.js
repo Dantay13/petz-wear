@@ -3,5 +3,6 @@ function secretFactOfDay(){
 console.log(secretFact);
 if(secretFact.toLowerCase() == 'yes') {
     document.write('Petz Fact of the Day: Dogs are the first animal to be domesticated') 
+    
 }
 }
