@@ -19,6 +19,29 @@ if(secretFact.toLowerCase() == 'yes') {
 }
 }
 
+function guessingGame(){
+    let userAnswer = prompt('Guest a number 1-15');
+    let correctAnswer = 13;
+    let attemps = 3;
+
+    for(let i = 1; i < attemps; i++){
+        while(userAnswer < 1 || userAnswer >15){
+            userAnswer = prompt('Please try again! A number 1-15');
+        }
+        if(userAnswer == correctAnswer){
+            alert('Great job, That is correct!');
+            break;
+        } else if (userAnswer > correctAnswer){
+            userAnswer = prompt('Sorry, too high! Please try again! A number 1-15');
+        } else if (userAnswer < correctAnswer){
+            userAnswer = prompt('Sorry, too low! Please try again! A number 1-15');
+        }
+        if(i == 2){
+            alert('The correct answer was' + correctAnswer)
+        }
+    }
+}
+
 function discountVoucher(){
     const getDiscountBtn = document.querySelector(".get-discount-btn");
 const couponContainer = document.querySelector(".coupon-container");
@@ -34,12 +57,22 @@ closeBtn.addEventListener("click", () => {
 }
 
 function multiChoiceQuest(){
-    let puppiesQuestion = prompt('Puppies are delivered how many weeks after conception?(36,22,9,4)')
-    console.log(puppiesQuestion);
-        if(puppiesQuestion == '9') {alert ('Correct!')}
-        else {
-            incorrectAnswer = prompt('Please try again. Puppies are delivered how many weeks after conception?(36,22,9,4)')
+    let puppiesQuestion = prompt('Puppies are delivered how many weeks after conception?(36,22,9,4)');
+    let puppiesCorrectAnswer = 9;
+    let puppiesAttemps = 3;
+
+    for(let i = 1; i < puppiesAttemps; i++){
+        if(puppiesQuestion == puppiesCorrectAnswer){
+            alert('Great job, That is correct!');
+            break;
+        } else if (puppiesQuestion == 36){
+            puppiesQuestion = prompt('Please try again. Puppies are delivered how many weeks after conception?(36,22,9,4)');
+        } else if (puppiesQuestion == 22){
+            puppiesQuestion = prompt('Please try again. Puppies are delivered how many weeks after conception?(36,22,9,4)');
+        } else if (puppiesQuestion == 4){
+            puppiesQuestion = prompt('Please try again. Puppies are delivered how many weeks after conception?(36,22,9,4)');
+        }
     }
 }
-    
+   
 multiChoiceQuest()
