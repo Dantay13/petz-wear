@@ -76,3 +76,17 @@ function multiChoiceQuest(){
 }
    
 multiChoiceQuest()
+
+ 
+function showAnotherPicQuest(){
+    let anotherPic = 1
+    let anotherPicQuest = prompt("How many stylish cats do you want to see?")
+    if (anotherPicQuest > 5){
+        alert("That is to many stylish cats on one page!")
+        anotherPicQuest = prompt("How many stylish cats do you want to see? (3 max.)")
+    }
+    for (let i = 0; i < anotherPicQuest; anotherPic++, i++){
+           document.write("<img src=https://mymodernmet.com/wp/wp-content/uploads/2021/07/benson-cat-outfits-18.jpeg><p>" + anotherPic + "</p>")
+    }
+}
+
